@@ -7,12 +7,11 @@ int main() {
 
     int n,p;
     cin >> n >> p;
-    p--;
     for(int i = 1; i < n; i++) {
         int x;
         cin >> x;
-        p = p ^ (x-1);
+        p = p ^ x;
     }
-    if(p) cout << "cubelover";
-    else cout << "koosaga";
+    if(p) cout << "koosaga";
+    else cout << "cubelover";
 }
